@@ -1,0 +1,16 @@
+t = int(input(""))
+no1=0
+a=1
+for i in range(0,t):
+    no=int(input(""))
+    temp=no
+    while(temp!=0):
+        if(temp%10==4):
+            no=no-a
+            no1=no1+a
+        temp = temp // 10
+        a = a * 10
+
+    print('Case #',i+1,": ",no, " ", no1,sep='')
+    a=1
+    no1=0
